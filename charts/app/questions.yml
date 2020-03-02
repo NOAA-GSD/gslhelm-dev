@@ -1,6 +1,11 @@
 categories:
   - MATSAPP
 questions:
+- variable: appName
+  default: app
+  type: string
+  required: true
+  label: The actual name of this app
 - variable: rootUrl
   default: https://rancher.localhost
   type: string
