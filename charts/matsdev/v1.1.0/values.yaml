@@ -1,0 +1,37 @@
+# Default values for mongo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+persistentVolumeClaim: matsdata
+rootUrl: https://rancher.localhost
+matsMongoUser: "matsUser"
+matsMongoPassword: "mu-2019"
+
+image:
+  repository: matsapps/development
+  tag: nightly
+  pullPolicy: IfNotPresent
+
+app:
+  appName: aircraft
+  persistentVolumeClaim: matsdata
+  rootUrl: https://rancher.localhost
+  portNumber: 80
+  matsMongoUser: matsUser
+  matsMongoPassword: mu-2019
+  image:
+    repository: matsapps/development
+    appVersion: nightly
+    pullPolicy: Always
+
+matsmongo:
+  persistentVolumeClaim: matsdata
+  matsMongoUser: "matsUser"
+  matsMongoPassword: "mu-2019"
+  image:
+    repository: mongo
+    tag: 4.2.0
+    pullPolicy: IfNotPresent
+
+

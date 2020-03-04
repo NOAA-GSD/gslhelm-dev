@@ -1,0 +1,8 @@
+apiVersion: v1
+name: app
+version: 1.1.0
+appVersion: nightly
+description: MATS app for a MATS deployment.
+keywords:
+- mats
+icon: file://./matsapp.png
