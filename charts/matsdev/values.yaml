@@ -14,7 +14,7 @@ image:
   pullPolicy: IfNotPresent
 
 app:
-  appName: aircraft
+  appName: aircraftX
   persistentVolumeClaim: matsdata
   rootUrl: https://rancher.localhost
   portNumber: 80
