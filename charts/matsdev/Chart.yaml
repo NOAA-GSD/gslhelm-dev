@@ -5,7 +5,7 @@ appVersion: 4.0.12
 description: Home landing page app for a MATS deployment.
 keywords:
 - mats
-icon: file://../matsapp.png
+icon: file://./matsapp.png
 
 matsmongo:
 
