@@ -25,6 +25,18 @@ app:
     appVersion: nightly
     pullPolicy: Always
 
+app:
+  appName: anomalycor
+  persistentVolumeClaim: matsdata
+  rootUrl: https://rancher.localhost
+  portNumber: 80
+  matsMongoUser: matsUser
+  matsMongoPassword: mu-2019
+  image:
+    repository: matsapps/development
+    appVersion: nightly
+    pullPolicy: Always
+
 matsmongo:
   persistentVolumeClaim: matsdata
   matsMongoUser: "matsUser"
