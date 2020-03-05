@@ -25,7 +25,7 @@ app:
     appVersion: nightly
     pullPolicy: Always
 
-app:
+app1:
   appName: anomalycor
   persistentVolumeClaim: matsdata
   rootUrl: https://rancher.localhost
