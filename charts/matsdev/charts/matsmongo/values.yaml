@@ -3,12 +3,8 @@
 # Declare variables to be passed into your templates.
 
 # the volume that will be mounted for all the mats data
-# this volume must be shared by the mongo app, the home app, and all the other apps
-persistentVolumeClaim: matsdata
-matsMongoUser: "matsUser"
-matsMongoPassword: "mu-2019"
+# this volume must be shared by the mongo common, the home common, and all the other apps
 image:
   repository: mongo
   tag: 4.2.0
   pullPolicy: IfNotPresent
-

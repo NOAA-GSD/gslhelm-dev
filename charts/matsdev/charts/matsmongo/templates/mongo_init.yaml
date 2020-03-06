@@ -3,8 +3,8 @@ data:
   mongo-init.js: |
     db.createUser(
             {
-                user: "{{ .Values.matsMongoUser }}",
-                pwd: "{{ .Values.matsMongoPassword }}",
+                user: "matsUser",
+                pwd: "{{ .Values.global.matsMongoPassword }}",
                 roles: [
                     {
                         role: "userAdminAnyDatabase",

@@ -6,7 +6,4 @@ description: A streamlined deployment of mongodb,a NoSQL document-oriented datab
 keywords:
 - mats
 - mongodb
-- database
-- nosql
-- cluster
-icon: file://../mongodb-stack-220x234.png
+icon: file://./mongodb-stack-220x234.png

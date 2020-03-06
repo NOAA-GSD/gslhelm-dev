@@ -32,7 +32,7 @@ spec:
       containers:
       - env:
         - name: MONGO_INITDB_ROOT_PASSWORD
-          value: "Adm1n0"
+          value: "{{ .Values.global.mongoAdminPassword }}"
         - name: MONGO_INITDB_ROOT_USERNAME
           value: "admin"
         - name: MONGO_INITDB_DATABASE
@@ -58,7 +58,7 @@ spec:
         volumeMounts:
           - mountPath: /data/db
             name: data
-            subPath: {{ .Values.persistentVolumeClaim }}/{{ .Release.Namespace }}/mongodata
+            subPath: {{ .Values.global.persistentVolumeClaim }}/{{ .Release.Namespace }}/mongodata
           - name: mongo-init
             mountPath: /docker-entrypoint-initdb.d
       dnsPolicy: ClusterFirst
@@ -69,7 +69,7 @@ spec:
       volumes:
         - name: data
           persistentVolumeClaim:
-            claimName: {{ .Values.persistentVolumeClaim }}
+            claimName: {{ .Values.global.persistentVolumeClaim }}
         - name: mongo-init
           configMap:
             name: mongo-init
