@@ -1,3 +1,4 @@
+appName: surfrad
 portNumber: 80
 image:
   repository: matsapps/development

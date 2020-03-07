@@ -1,3 +1,4 @@
+appName: met-ensemble
 portNumber: 80
 image:
   repository: matsapps/development

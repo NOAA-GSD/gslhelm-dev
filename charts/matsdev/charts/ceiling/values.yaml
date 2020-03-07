@@ -1,3 +1,4 @@
+appName: ceiling
 portNumber: 80
 image:
   repository: matsapps/development

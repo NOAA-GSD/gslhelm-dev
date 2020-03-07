@@ -1,3 +1,4 @@
+appName: ptype
 portNumber: 80
 image:
   repository: matsapps/development

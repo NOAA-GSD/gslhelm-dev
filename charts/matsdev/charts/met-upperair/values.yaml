@@ -1,3 +1,4 @@
+appName: met-upperair
 portNumber: 80
 image:
   repository: matsapps/development

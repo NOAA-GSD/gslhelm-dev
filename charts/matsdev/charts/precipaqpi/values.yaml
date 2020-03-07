@@ -1,3 +1,4 @@
+appName: precipaqpi
 portNumber: 80
 image:
   repository: matsapps/development

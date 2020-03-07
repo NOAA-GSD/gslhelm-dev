@@ -1,3 +1,4 @@
+appName: precipitation24hr
 portNumber: 80
 image:
   repository: matsapps/development

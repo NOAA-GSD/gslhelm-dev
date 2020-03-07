@@ -1,3 +1,4 @@
+appName: compositereflectivity
 portNumber: 80
 image:
   repository: matsapps/development
