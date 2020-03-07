@@ -5,4 +5,4 @@ appVersion: nightly
 description: MATS common for a MATS deployment.
 keywords:
 - mats
-icon: file://../../common/matsapp.png
+icon: file://../common/matsapp.png
