@@ -1,4 +1,5 @@
 appName: precipitation1hr
+appReference: precipitation1hr
 portNumber: 80
 image:
   repository: matsapps/development

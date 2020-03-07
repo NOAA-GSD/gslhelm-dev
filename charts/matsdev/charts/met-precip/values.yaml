@@ -1,4 +1,5 @@
 appName: met-precip
+appReference: met-precip
 portNumber: 80
 image:
   repository: matsapps/development

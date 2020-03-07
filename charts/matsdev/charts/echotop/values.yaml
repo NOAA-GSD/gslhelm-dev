@@ -1,4 +1,5 @@
 appName: echotop
+appReference: echoTop
 portNumber: 80
 image:
   repository: matsapps/development

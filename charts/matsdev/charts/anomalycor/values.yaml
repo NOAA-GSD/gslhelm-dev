@@ -1,4 +1,5 @@
 appName: anomalycor
+appReference: anomalycor
 portNumber: 80
 image:
   repository: matsapps/development

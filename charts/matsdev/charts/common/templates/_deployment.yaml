@@ -38,7 +38,7 @@ spec:
       containers:
         - env:
             - name: MONGO_URL
-              value: "mongodb://matsUser:{{ .Values.global.matsMongoPassword }}@mongo:27017/{{ .Values.appName }}?authSource=admin"
+              value: "mongodb://matsUser:{{ .Values.global.matsMongoPassword }}@mongo:27017/{{ .Values.appReference }}?authSource=admin"
             - name: DEPLOYMENT_ENVIRONMENT
               {{- if eq .Release.Namespace "matsdev" }}
               value: "development"
@@ -53,7 +53,7 @@ spec:
               value: Upper Air,Ceiling and Visibility,Surface,Precipitation,Radar,METexpress
             - name: ROOT_URL
               value: "{{ .Values.global.rootUrl }}/{{ .Release.Namespace }}/{{ .Values.appName }}"
-          image: "{{ .Values.image.repository }}:{{ .Values.appName }}-{{ .Values.image.appVersion }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.appReference }}-{{ .Values.image.appVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           name: {{ .Values.appName }}
           ports:

@@ -1,4 +1,5 @@
 appName: home
+appReference: home
 replicaCount: 1
 persistentVolumeClaim: matsdata
 image:
