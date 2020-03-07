@@ -4,17 +4,4 @@ global:
   mongoAdminPassword: Adm1n0
   persistentVolumeClaim: matsdata
 
-matsmongo:
-  appName: matsmongo
-
-aircraft:
-  appName: aircraft
-
-anomalycor:
-  appName: anomalycor
-
-matshome:
-  appName: matshome
-  image:
-    tag: nightly
 
