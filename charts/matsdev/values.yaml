@@ -3,5 +3,3 @@ global:
   matsMongoPassword: mu-2019
   mongoAdminPassword: Adm1n0
   persistentVolumeClaim: matsdata
-
-
