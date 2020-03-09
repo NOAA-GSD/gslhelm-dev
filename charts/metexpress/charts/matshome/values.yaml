@@ -3,7 +3,7 @@ appReference: home
 replicaCount: 1
 persistentVolumeClaim: matsdata
 image:
-  repository: matsapps/production
-  tag: 2.4.5
+  repository: matsapps/development
+  tag: nightly
   pullPolicy: IfNotPresent
 
